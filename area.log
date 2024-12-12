@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: Q-2019.12
+Date   : Wed Dec 11 15:57:54 2024
+****************************************
+
+Library(s) Used:
+
+    fast (File: /cad/CBDK/CBDK_IC_Contest_v2.5/SynopsysDC/db/fast.db)
+    SRAM_DP_test5 (File: /home/ic_contest/yuan/report_data_1128/SRAM_DP_test5.db)
+    sram_dp_512_32 (File: /home/ic_contest/yuan/report_data_1128/SRAM_DP_512x32.db)
+
+Number of ports:                          147
+Number of nets:                          8665
+Number of cells:                         6438
+Number of combinational cells:           6055
+Number of sequential cells:               370
+Number of macros/black boxes:               9
+Number of buf/inv:                       1182
+Number of references:                     101
+
+Combinational area:              84569.561969
+Buf/Inv area:                     5014.119563
+Noncombinational area:           13214.259132
+Macro/Black Box area:          3289899.515625
+Net Interconnect area:          753530.460419
+
+Total cell area:               3387683.336726
+Total area:                    4141213.797145
+1
