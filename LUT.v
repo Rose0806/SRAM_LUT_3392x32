@@ -40,7 +40,7 @@ always@(posedge clk) begin
         data2_ <= data2;
 	end
 end
-SRAM_DP_test6 mySRAM_DP_LUT_R1(  
+SRAM_DP_test5 mySRAM_DP_LUT_R1(  
             //port1        
             .DA(data1_),
             .AA(addr1_R),
@@ -58,7 +58,7 @@ SRAM_DP_test6 mySRAM_DP_LUT_R1(
             .QB(O1_R),
             .EMAB(3'b0)
             );
-SRAM_DP_test6 mySRAM_DP_LUT_R2(  
+SRAM_DP_test5 mySRAM_DP_LUT_R2(  
             //port1        
             .DA(data1_),
             .AA(addr3_R),
@@ -82,7 +82,7 @@ assign addr2_L = (SR_start)? O1_addr_L : addr2-4;
 assign addr3_L = (SR_start)? O2_addr_L : addr1-4;
 assign addr4_L = (SR_start)? O3_addr_L : addr2-4;
 
-SRAM_DP_test6 mySRAM_DP_LUT_L1(  
+SRAM_DP_test5 mySRAM_DP_LUT_L1(  
             //port1        
             .DA(data1_),
             .AA(addr1_L),
@@ -100,7 +100,7 @@ SRAM_DP_test6 mySRAM_DP_LUT_L1(
             .QB(O1_L),
             .EMAB(3'b0)
             );
-SRAM_DP_test6 mySRAM_DP_LUT_L2(  
+SRAM_DP_test5 mySRAM_DP_LUT_L2(  
             //port1        
             .DA(data1_),
             .AA(addr3_L),
@@ -124,7 +124,7 @@ assign addr2_U = (SR_start)? O1_addr_U : addr2-4;
 assign addr3_U = (SR_start)? O2_addr_U : addr1-4;
 assign addr4_U = (SR_start)? O3_addr_U : addr2-4;
 
-SRAM_DP_test6 mySRAM_DP_LUT_U1(  
+SRAM_DP_test5 mySRAM_DP_LUT_U1(  
             //port1        
             .DA(data1_),
             .AA(addr1_U),
@@ -142,7 +142,7 @@ SRAM_DP_test6 mySRAM_DP_LUT_U1(
             .QB(O1_U),
             .EMAB(3'b0)
             );
-SRAM_DP_test6 mySRAM_DP_LUT_U2(  
+SRAM_DP_test5 mySRAM_DP_LUT_U2(  
             //port1        
             .DA(data1_),
             .AA(addr3_U),
@@ -166,7 +166,7 @@ assign addr2_D = (SR_start)? O1_addr_D : addr2-4;
 assign addr3_D = (SR_start)? O2_addr_D : addr1-4;
 assign addr4_D = (SR_start)? O3_addr_D : addr2-4;
 
-SRAM_DP_test6 mySRAM_DP_LUT_D1(  
+SRAM_DP_test5 mySRAM_DP_LUT_D1(  
             //port1        
             .DA(data1_),
             .AA(addr1_D),
@@ -184,7 +184,7 @@ SRAM_DP_test6 mySRAM_DP_LUT_D1(
             .QB(O1_D),
             .EMAB(3'b0)
             );
-SRAM_DP_test6 mySRAM_DP_LUT_D2(  
+SRAM_DP_test5 mySRAM_DP_LUT_D2(  
             //port1        
             .DA(data1_),
             .AA(addr3_D),
