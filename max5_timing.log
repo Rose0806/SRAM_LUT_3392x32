@@ -1,0 +1,281 @@
+ 
+****************************************
+Report : timing
+        -path full_clock
+        -delay max
+        -max_paths 5
+Design : top
+Version: Q-2019.12
+Date   : Sat Dec 14 18:58:24 2024
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: clk_r_REG155_S2
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: myLUT_mySRAM_DP_LUT_R2
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                tsmc13_wl10           fast
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  clk_r_REG155_S2/CK (DFFQX2)                             0.00       0.50 r
+  clk_r_REG155_S2/Q (DFFQX2)                              0.18       0.68 r
+  U5813/Y (INVX3)                                         0.13       0.81 f
+  U1646/Y (INVX3)                                         0.31       1.12 r
+  U3070/Y (NAND2X1)                                       0.15       1.27 f
+  U1636/Y (OAI21XL)                                       0.37       1.63 r
+  U5815/Y (AOI22X1)                                       0.21       1.84 f
+  U2672/Y (NAND2X1)                                       0.14       1.98 r
+  U1816/Y (CLKINVX1)                                      0.06       2.04 f
+  U5826/Y (OA21X4)                                        0.14       2.18 f
+  U5835/Y (OAI21X1)                                       0.22       2.41 r
+  U1683/Y (NAND2X1)                                       0.22       2.62 f
+  U1670/Y (CLKINVX1)                                      0.19       2.81 r
+  U1657/CO (ADDFX2)                                       0.22       3.04 r
+  U4521/CO (CMPR32X2)                                     0.11       3.15 r
+  U4495/CO (CMPR32X2)                                     0.12       3.27 r
+  U2310/CO (ADDHX1)                                       0.11       3.38 r
+  U2282/CO (ADDHX1)                                       0.11       3.49 r
+  U2232/S (ADDHX1)                                        0.08       3.57 r
+  U2175/Y (NAND2X1)                                       0.05       3.63 f
+  U5861/Y (NAND2X1)                                       0.29       3.91 r
+  myLUT_mySRAM_DP_LUT_R2/AA[10] (SRAM_DP_test5)           0.00       3.91 r
+  data arrival time                                                  3.91
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.50       4.50
+  clock uncertainty                                      -0.10       4.40
+  myLUT_mySRAM_DP_LUT_R2/CLKA (SRAM_DP_test5)             0.00       4.40 r
+  library setup time                                     -0.48       3.92
+  data required time                                                 3.92
+  --------------------------------------------------------------------------
+  data required time                                                 3.92
+  data arrival time                                                 -3.91
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: myLUT_mySRAM_DP_LUT_L1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_4_clk_r_REG81_S3
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                tsmc13_wl10           fast
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  myLUT_mySRAM_DP_LUT_L1/CLKB (SRAM_DP_test5)             0.00       0.50 r
+  myLUT_mySRAM_DP_LUT_L1/QB[16] (SRAM_DP_test5)           0.87       1.37 f
+  U2037/Y (AND2X2)                                        0.13       1.49 f
+  U3477/Y (INVX1)                                         0.07       1.56 r
+  U3055/Y (NOR2X1)                                        0.08       1.65 f
+  U2863/Y (NOR2X1)                                        0.13       1.77 r
+  U4786/S (CMPR42X2)                                      0.26       2.03 f
+  intadd_5_U10/S (ADDFX2)                                 0.17       2.20 f
+  U6682/Y (NAND2X1)                                       0.26       2.45 r
+  U6227/Y (OA21X4)                                        0.07       2.52 r
+  intadd_2_U11/S (ADDFX2)                                 0.10       2.62 f
+  U4734/Y (OAI31XL)                                       0.19       2.82 r
+  U2120/Y (NAND2XL)                                       0.09       2.91 f
+  U2649/Y (NAND3X1)                                       0.11       3.02 r
+  U5766/Y (OAI21XL)                                       0.07       3.09 f
+  intadd_2_U10/CO (ADDFX2)                                0.22       3.31 f
+  intadd_2_U9/CO (ADDFX2)                                 0.14       3.45 f
+  intadd_2_U8/CO (ADDFX2)                                 0.14       3.59 f
+  intadd_2_U7/CO (ADDFX2)                                 0.14       3.74 f
+  intadd_2_U6/CO (ADDFX2)                                 0.14       3.88 f
+  intadd_2_U5/CO (ADDFX2)                                 0.14       4.03 f
+  intadd_2_U4/CO (ADDFHX2)                                0.10       4.13 f
+  intadd_2_U3/CO (ADDFHX1)                                0.12       4.24 f
+  R_4_clk_r_REG81_S3/D (EDFFXL)                           0.00       4.24 f
+  data arrival time                                                  4.24
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.50       4.50
+  clock uncertainty                                      -0.10       4.40
+  R_4_clk_r_REG81_S3/CK (EDFFXL)                          0.00       4.40 r
+  library setup time                                     -0.15       4.25
+  data required time                                                 4.25
+  --------------------------------------------------------------------------
+  data required time                                                 4.25
+  data arrival time                                                 -4.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: myLUT_mySRAM_DP_LUT_L1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_5_clk_r_REG81_S3
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                tsmc13_wl10           fast
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  myLUT_mySRAM_DP_LUT_L1/CLKB (SRAM_DP_test5)             0.00       0.50 r
+  myLUT_mySRAM_DP_LUT_L1/QB[16] (SRAM_DP_test5)           0.87       1.37 f
+  U2037/Y (AND2X2)                                        0.13       1.49 f
+  U3477/Y (INVX1)                                         0.07       1.56 r
+  U3055/Y (NOR2X1)                                        0.08       1.65 f
+  U2863/Y (NOR2X1)                                        0.13       1.77 r
+  U4786/S (CMPR42X2)                                      0.26       2.03 f
+  intadd_5_U10/S (ADDFX2)                                 0.17       2.20 f
+  U6682/Y (NAND2X1)                                       0.26       2.45 r
+  U6227/Y (OA21X4)                                        0.07       2.52 r
+  intadd_2_U11/S (ADDFX2)                                 0.10       2.62 f
+  U4734/Y (OAI31XL)                                       0.19       2.82 r
+  U2120/Y (NAND2XL)                                       0.09       2.91 f
+  U2649/Y (NAND3X1)                                       0.11       3.02 r
+  U5766/Y (OAI21XL)                                       0.07       3.09 f
+  intadd_2_U10/CO (ADDFX2)                                0.22       3.31 f
+  intadd_2_U9/CO (ADDFX2)                                 0.14       3.45 f
+  intadd_2_U8/CO (ADDFX2)                                 0.14       3.59 f
+  intadd_2_U7/CO (ADDFX2)                                 0.14       3.74 f
+  intadd_2_U6/CO (ADDFX2)                                 0.14       3.88 f
+  intadd_2_U5/CO (ADDFX2)                                 0.14       4.03 f
+  intadd_2_U4/CO (ADDFHX2)                                0.10       4.13 f
+  intadd_2_U3/S (ADDFHX1)                                 0.11       4.24 f
+  R_5_clk_r_REG81_S3/D (EDFFXL)                           0.00       4.24 f
+  data arrival time                                                  4.24
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.50       4.50
+  clock uncertainty                                      -0.10       4.40
+  R_5_clk_r_REG81_S3/CK (EDFFXL)                          0.00       4.40 r
+  library setup time                                     -0.15       4.25
+  data required time                                                 4.25
+  --------------------------------------------------------------------------
+  data required time                                                 4.25
+  data arrival time                                                 -4.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: clk_r_REG165_S3
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: addr[13] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                tsmc13_wl10           fast
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clk_r_REG165_S3/CK (DFFQX2)              0.00       0.50 r
+  clk_r_REG165_S3/Q (DFFQX2)               0.24       0.74 r
+  U1835/Y (AOI2BB2X2)                      0.11       0.85 r
+  U1681/Y (NAND2XL)                        0.11       0.96 f
+  U1638/Y (NAND2X1)                        0.22       1.18 r
+  U1809/Y (AOI2BB2X2)                      0.12       1.30 r
+  U6234/Y (NAND2X1)                        0.08       1.38 f
+  U2474/Y (NAND2XL)                        0.32       1.69 r
+  U1786/Y (AOI2BB2X2)                      0.05       1.74 f
+  intadd_20_U5/CO (ADDFX2)                 0.19       1.93 f
+  intadd_20_U4/CO (ADDFX2)                 0.14       2.08 f
+  intadd_20_U3/CO (ADDFX2)                 0.14       2.22 f
+  intadd_20_U2/CO (ADDFX2)                 0.19       2.41 f
+  U2343/Y (AOI2BB2X2)                      0.12       2.52 r
+  U2284/Y (NOR2X1)                         0.09       2.61 f
+  U2245/Y (NOR2X1)                         0.19       2.80 r
+  U2205/Y (NAND2X1)                        0.11       2.91 f
+  U2172/Y (NAND2BX2)                       0.11       3.01 r
+  U7387/Y (OAI211X2)                       0.08       3.09 f
+  U7388/Y (NOR2X2)                         0.14       3.23 r
+  U2102/Y (NOR2X1)                         0.06       3.29 f
+  U3034/Y (AOI211XL)                       0.25       3.54 r
+  U5643/Y (BUFX12)                         0.34       3.88 r
+  addr[13] (out)                           0.00       3.88 r
+  data arrival time                                   3.88
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.50       4.50
+  clock uncertainty                       -0.10       4.40
+  output external delay                   -0.50       3.90
+  data required time                                  3.90
+  -----------------------------------------------------------
+  data required time                                  3.90
+  data arrival time                                  -3.88
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: clk_r_REG155_S2
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: myLUT_mySRAM_DP_LUT_R1
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                tsmc13_wl10           fast
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  clk_r_REG155_S2/CK (DFFQX2)                             0.00       0.50 r
+  clk_r_REG155_S2/Q (DFFQX2)                              0.18       0.68 r
+  U5813/Y (INVX3)                                         0.13       0.81 f
+  U1646/Y (INVX3)                                         0.31       1.12 r
+  U3070/Y (NAND2X1)                                       0.15       1.27 f
+  U1636/Y (OAI21XL)                                       0.37       1.63 r
+  U5815/Y (AOI22X1)                                       0.21       1.84 f
+  U2672/Y (NAND2X1)                                       0.14       1.98 r
+  U1816/Y (CLKINVX1)                                      0.06       2.04 f
+  U5826/Y (OA21X4)                                        0.14       2.18 f
+  U6047/CO (ADDFX2)                                       0.21       2.39 f
+  U6058/CO (ADDFX2)                                       0.18       2.57 f
+  U6105/CO (ADDFX2)                                       0.16       2.73 f
+  U1784/Y (AND2X2)                                        0.10       2.83 f
+  U6142/CO (ADDFX2)                                       0.14       2.96 f
+  U6149/CO (ADDFX2)                                       0.14       3.11 f
+  U5915/CO (ADDFX2)                                       0.15       3.25 f
+  U2323/CO (ADDHX1)                                       0.11       3.36 f
+  U2299/CO (ADDHX1)                                       0.12       3.48 f
+  U2271/CO (ADDHX1)                                       0.11       3.59 f
+  U5542/Y (XOR2X1)                                        0.10       3.70 r
+  U2201/Y (NAND2X1)                                       0.07       3.76 f
+  U4615/Y (NAND2X2)                                       0.15       3.92 r
+  myLUT_mySRAM_DP_LUT_R1/AB[11] (SRAM_DP_test5)           0.00       3.92 r
+  data arrival time                                                  3.92
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.50       4.50
+  clock uncertainty                                      -0.10       4.40
+  myLUT_mySRAM_DP_LUT_R1/CLKB (SRAM_DP_test5)             0.00       4.40 r
+  library setup time                                     -0.46       3.94
+  data required time                                                 3.94
+  --------------------------------------------------------------------------
+  data required time                                                 3.94
+  data arrival time                                                 -3.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1
