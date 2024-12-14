@@ -3,7 +3,7 @@
 Report : area
 Design : top
 Version: Q-2019.12
-Date   : Wed Dec 11 15:57:54 2024
+Date   : Sat Dec 14 15:08:11 2024
 ****************************************
 
 Library(s) Used:
@@ -13,20 +13,20 @@ Library(s) Used:
     sram_dp_512_32 (File: /home/ic_contest/yuan/report_data_1128/SRAM_DP_512x32.db)
 
 Number of ports:                          147
-Number of nets:                          8665
-Number of cells:                         6438
-Number of combinational cells:           6055
-Number of sequential cells:               370
+Number of nets:                          8558
+Number of cells:                         6332
+Number of combinational cells:           5950
+Number of sequential cells:               369
 Number of macros/black boxes:               9
-Number of buf/inv:                       1182
-Number of references:                     101
+Number of buf/inv:                       1162
+Number of references:                     103
 
-Combinational area:              84569.561969
-Buf/Inv area:                     5014.119563
-Noncombinational area:           13214.259132
+Combinational area:              83736.138599
+Buf/Inv area:                     4958.105364
+Noncombinational area:           12616.774395
 Macro/Black Box area:          3289899.515625
-Net Interconnect area:          753530.460419
+Net Interconnect area:          745690.419312
 
-Total cell area:               3387683.336726
-Total area:                    4141213.797145
+Total cell area:               3386252.428619
+Total area:                    4131942.847930
 1
