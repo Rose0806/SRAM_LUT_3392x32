@@ -172,7 +172,7 @@ wire [2:0] Ly = data1[3:1];
 wire [2:0] Lz = data2[3:1];
 
 //225 15 1
-wire [11:0] addr_P000 = (((img_a1<<7) + (img_a1<<6)) + ((img_a1<<5) + img_a1)) + (((img_b1<<4) - img_b1) + img_c1);  
+wire [11:0] addr_P000 = img_a1*225 + img_b1*15 + img_c1;  
 wire [11:0] addr_P001 = addr_P000 + 1;
 wire [11:0] addr_P010 = addr_P000 + 15;
 wire [11:0] addr_P011 = addr_P000 + 16;
