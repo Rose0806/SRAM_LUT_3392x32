@@ -34,7 +34,7 @@ assign full_wdata = (en)?{out2, out3, out4, wdata}:32'b0;
 reg [8:0] rst_addr;
 wire [8:0] waddr = (en)?cur_waddr:rst_addr;
 
-always@(posedge clk, posedge rst) begin
+always@(posedge clk) begin
     if(rst) begin
         cur_waddr <= $unsigned(2'b00);
         cur_raddr <= $unsigned(2'b01);
